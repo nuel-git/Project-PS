@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+    <link href="./styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .container {
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .project-container {
+        display: flex;
+      }
+
+      .project-image {
+        height: 100px;
+        border-radius: 5px;
+        margin-bottom: 5px;
+        margin-right: 15px;
+      }
+
+      .project-name {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 0%;
+        margin-left: 15px;
+      }
+
+      .project-button {
+        margin-bottom: 15px;
+        width: 50%;
+        border-radius: 5px;
+      }
+
+      .project-img-button {
+        display: flex;
+        flex-direction: column;
+      }
+
+      @media screen and (max-width: 480px) {
+        .project-container {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .project-image {
+          height: 200px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header section -->
+    <section id="header">
+      <nav>
+        <p class="name-logo">Nuel</p>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./skills.html">Skills</a></li>
+          <li><a href="./projects.html">Projects</a></li>
+          <li><a href="./aboutme.html">About me</a></li>
+          <li><a href="./contactme.html">Contact me</a></li>
+        </ul>
+      </nav>
+    </section>
+    <!-- Hero section -->
+    <section id="hero">
+      <h1 style="padding: 15px">Projects</h1>
+      <div class="container">
+        <div class="project-container">
+          <div class="project-img-button">
+            <img src="tindog.png" alt="tindog website image" class="project-image" />
+            <a href="https://nuel-git.github.io/TinDog/">
+            <button class="project-button">View</button>
+            </a>
+          </div>
+          <div class="project-ncb">
+            <h3 class="project-name">Tindog</h3>
+            <p class="project-description">
+              Tindog is a web application for your dogs to find true partners.
+            </p>
+          </div>
+        </div>
+        <div class="project-container">
+          <div class="project-img-button">
+            <img src="technology.jpg" alt="technology" class="project-image" />
+            <button class="project-button">View</button>
+          </div>
+          <div class="project-ncb">
+            <h3 class="project-name">Cinematic Universe</h3>
+            <p class="project-description">Watch all movies and TV shows. Grab a popcorn first!</p>
+          </div>
+        </div>
+        <div class="project-container">
+          <div class="project-img-button">
+            <img src="technology.jpg" alt="technology" class="project-image" />
+            <button class="project-button">View</button>
+          </div>
+          <div class="project-ncb">
+            <h3 class="project-name">Barley foods</h3>
+            <p class="project-description">
+              Barley foods is a hybrid food service company. We offer only the
+              best! Order Now.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About me</title>
+    <link href="./styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .aboutme-container{
+        display: flex;
+        flex-direction: row;
+      }
+
+      .profile-img {
+        margin: 15px;
+        border-radius: 50%;
+        height: 200px;
+      }
+
+      .text-container {
+        margin-left: 15px;
+      }
+
+      .unlist {
+        display: block;
+      }
+
+      .aboutme-title {
+        font-weight: 900;
+      }
+
+      .name {
+        font-size: larger;
+      }
+
+      @media screen and (max-width: 480px) {
+        .profile-img {
+          width: 170px;
+          height: 170px;
+        }
+
+        .aboutme-container {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .aboutme-text {
+          width: 100%;
+        }
+        
+  }
+    </style>
+  </head>
+  <body>
+    <!-- Header section -->
+    <section id="header">
+      <nav>
+        <p class="name-logo">Nuel</p>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./skills.html">Skills</a></li>
+          <li><a href="./projects.html">Projects</a></li>
+          <li><a href="./aboutme.html">About me</a></li>
+          <li><a href="./contactme.html">Contact me</a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <!-- Hero section -->
+    <section id="hero">
+      <h1 style="padding: 15px">About Me</h1>
+      <div class="aboutme-container">
+        <img src="./aboutme.jpg" alt="profile image" class="profile-img">
+        <div>
+          <p class="aboutme-text" style="width: 70%;">
+            <span class="aboutme-title">I'm <span class="name">Emmanuel Martin,</span> Web Developer / Designer</span> <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, ad expedita omnis explicabo dolor dolore unde aut provident illum voluptatem accusantium natus, sequi quod sint necessitatibus dolorum reprehenderit a error.
+          </p>
+          <div class="text-container">
+          <h4>What I Do?</h4>
+          <ul class="unlist">
+            <li class="list">Web Development</li>
+            <li class="list">Web Design</li>
+            <li class="list">Graphic Design</li>
+            <li class="list">Programming</li>
+            <li class="list">Cre-active Problem Solving</li>
+          </ul>
+        </div>
+        </div>
+      </div>
+  </body>
+</html>
